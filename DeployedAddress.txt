@@ -1,3 +1,0 @@
-{
-  "RedPetals": "0xb8cE43563576D955bC6d70259c0beb42cce616f4"
-}

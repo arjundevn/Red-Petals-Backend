@@ -33,7 +33,7 @@ async function main() {
   const RedPetalsArtifact = artifacts.readArtifactSync("RedPetals");
 
   fs.writeFileSync(
-    "DeployedAddress.txt",
+    "contract-address.json",
     JSON.stringify({ RedPetals: redPetals.address }, undefined, 2),
   );
 
