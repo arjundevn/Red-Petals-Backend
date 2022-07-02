@@ -30,10 +30,16 @@ async function main() {
 
   console.log("RedPetals deployed to:", redPetals.address);
 
+  const RedPetalsArtifact = artifacts.readArtifactSync("RedPetals");
+
   fs.writeFileSync(
     "DeployedAddress.txt",
     JSON.stringify({ RedPetals: redPetals.address }, undefined, 2),
-  //   JSON.stringify({ MultiSig: multiSig.address }, undefined, 2)
+  );
+
+  fs.writeFileSync(
+    "RedPetals.json",
+    JSON.stringify(RedPetalsArtifact, null, 2)
   );
   }
 
