@@ -26,6 +26,7 @@
     "hardhat": "^2.9.9"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "fs": "^0.0.1-security"
   }
 }
